@@ -166,7 +166,7 @@ END {
    print "    MolecularMass [amu] =", molecular_mass
    print "    Density [kg/l] =", density
    print "  }"
-   print "  Shift [kcal/mol] =", free_energy_shift
+   print "  FreeEnergyShift [kcal/mol] =", free_energy_shift
    print "  BornScale =", born_scale
    print "  BornOffset [AA] =", born_offset
    if (hbond_corr) {
@@ -174,10 +174,10 @@ END {
    } else {
       print "  HBondCorr = No"
    }
-   print "  Radii = vandDerWaalsRadiiD3 [AA] {}"
+   print "  Radii = vanDerWaalsRadiiD3 [AA] {}"
    print "  SASA {"
-   print "    ProbeRad [AA] =", born_offset
-   print "    Radii = vandDerWaalsRadiiD3 [AA] {}"
+   print "    ProbeRadius [AA] =", probe_rad
+   print "    Radii = vanDerWaalsRadiiD3 [AA] {}"
    print surface_tension
    print "  }"
    print descreening
